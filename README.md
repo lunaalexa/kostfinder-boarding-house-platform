@@ -87,6 +87,4 @@ The Compare feature was one of the main reasons KostFinder existed. It came from
 * Nazhifa Kirana Mulya Nugraha
 * Fransciska Olivia Putri Warae
 
-* (Tambahkan nama anggota tim lainnya)
-
 BINUS University — Human-Computer Interaction Project
