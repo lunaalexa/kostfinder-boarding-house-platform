@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KostFinder – Booking</title>
+  <link rel="stylesheet" href="../css/shared.css" />
+  <link rel="stylesheet" href="../css/booking.css" />
+</head>
+<body>
+
+<div class="phone-wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🏠</span>KostFinder
+    </a>
+    <div class="navbar-icons">
+      <a href="comparison.html" title="Compare kosts">⊞</a>
+      <a href="favorite.html" title="Favorites">♡</a>
+    <div class="menu-container">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- STEPS BAR -->
+  <div class="steps-bar">
+    <div class="step-circle active" id="step1">1</div>
+    <div class="step-line" id="line1"></div>
+    <div class="step-circle" id="step2">2</div>
+    <div class="step-line" id="line2"></div>
+    <div class="step-circle" id="step3">3</div>
+  </div>
+
+  <!-- CONTENT (rendered by JS) -->
+  <div class="page-content" id="bookingContent"></div>
+
+</div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/booking.js"></script>
+</body>
+</html>

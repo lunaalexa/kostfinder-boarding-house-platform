@@ -1,0 +1,53 @@
+/* ============================================
+   HOME PAGE STYLES
+   ============================================ */
+
+.home-hero {
+  padding: 20px 20px 8px;
+}
+
+.home-hero h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.home-hero p {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.kost-card-img .badge-room {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.92);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px 4px;
+}
+
+.section-label h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.section-label a {
+  font-size: 0.78rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}

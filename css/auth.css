@@ -1,0 +1,111 @@
+/* ============================================
+   AUTH PAGE STYLES (Login & Sign Up)
+   ============================================ */
+
+.auth-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: var(--secondary-bg);
+}
+
+.auth-card {
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  box-shadow: var(--shadow-md);
+  animation: fadeInUp 0.45s ease both;
+}
+
+.auth-card h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.auth-card .auth-sub {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.auth-divider {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin: 16px 0;
+  position: relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 1px;
+  background: var(--border);
+}
+
+.auth-divider::before { left: 0; }
+.auth-divider::after { right: 0; }
+
+.auth-link-btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--primary);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.auth-link-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.auth-redirect {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.auth-redirect a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-redirect a:hover {
+  text-decoration: underline;
+}
+
+.navbar-simple {
+  background: var(--primary);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-simple .navbar-brand {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}

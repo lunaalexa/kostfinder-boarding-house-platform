@@ -1,0 +1,109 @@
+/* ============================================
+   FAVORITE PAGE STYLES
+   ============================================ */
+
+.edit-toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 20px 0;
+}
+
+.edit-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text-medium);
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.edit-toggle button:hover {
+  color: var(--primary);
+}
+
+.kost-card-fav {
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.92);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s;
+  z-index: 2;
+  display: none;
+}
+
+.remove-btn:hover {
+  background: #FFEBEE;
+  color: #E53935;
+}
+
+.edit-mode .remove-btn {
+  display: flex;
+}
+
+.edit-mode .fav-heart {
+  display: none;
+}
+
+.fav-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #E53935;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 6px rgba(229,57,53,0.3);
+}
+
+.empty-fav {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-light);
+}
+
+.empty-fav .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.empty-fav h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-medium);
+  margin-bottom: 8px;
+}
+
+.empty-fav p {
+  font-size: 0.82rem;
+}
+
+.empty-fav a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.empty-fav a:hover {
+  background: var(--primary-dark);
+}
