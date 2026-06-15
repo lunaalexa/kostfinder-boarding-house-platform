@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KostFinder – Detail</title>
+  <link rel="stylesheet" href="../css/shared.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+</head>
+<body>
+
+<div class="phone-wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🏠</span>KostFinder
+    </a>
+    <div class="navbar-icons">
+      <a href="comparison.html" title="Compare kosts">⊞</a>
+      <a href="favorite.html" title="Favorites">♡</a>
+    <div class="menu-container">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- CONTENT -->
+  <div class="page-content">
+
+    <div class="detail-body animate-in" style="padding-top:10px;">
+      <a class="back-link" href="index.html">← Back</a>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="detail-gallery animate-in" id="detailGallery">
+      <img src="" alt="" id="img1" />
+      <img src="" alt="" id="img2" />
+    </div>
+
+    <div class="detail-body">
+
+      <!-- NAME & PRICE -->
+      <div class="detail-price-row animate-in">
+        <div>
+          <div class="detail-name" id="detailName">–</div>
+          <div class="detail-loc" id="detailLoc">–</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="detail-price" id="detailPrice">–</div>
+          <div class="detail-price-sub">per month</div>
+        </div>
+      </div>
+
+      <!-- RATING -->
+      <div class="detail-rating animate-in">
+        <span class="rating-num" id="detailRating">–</span>
+        <span class="stars" id="detailStars">★★★★★</span>
+        <span class="rating-count" id="detailReviewCount">– reviews</span>
+        <span class="room-badge" id="detailRoomBadge">–</span>
+      </div>
+
+      <!-- DESC -->
+      <p class="detail-desc animate-in" id="detailDesc">–</p>
+
+      <!-- AMENITIES -->
+      <div class="amenities animate-in" id="detailAmenities"></div>
+
+      <!-- BOOK BUTTON -->
+      <button class="book-btn animate-in" id="bookBtn">Book Now</button>
+
+      <div class="divider"></div>
+
+      <!-- REVIEWS -->
+      <div class="section-title animate-in">Reviews &amp; Ratings</div>
+
+      <div class="reviews-header animate-in">
+        <div class="big-rating" id="bigRating">–</div>
+        <div class="rating-bars">
+          <div class="rating-bar-row"><span class="rating-bar-label">5</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:85%"></div></div></div>
+          <div class="rating-bar-row"><span class="rating-bar-label">4</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:60%"></div></div></div>
+          <div class="rating-bar-row"><span class="rating-bar-label">3</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:25%"></div></div></div>
+          <div class="rating-bar-row"><span class="rating-bar-label">2</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:10%"></div></div></div>
+          <div class="rating-bar-row"><span class="rating-bar-label">1</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:5%"></div></div></div>
+        </div>
+      </div>
+
+      <div id="reviewList" class="animate-in"></div>
+      <button id="addReviewBtn" class="review-btn">
+        Add Review
+      </button>
+
+    </div><!-- end detail-body -->
+  </div><!-- end page-content -->
+</div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/detail.js"></script>
+</body>
+</html>
