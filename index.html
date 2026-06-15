@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KostFinder – Home</title>
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<div class="phone-wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🏠</span>KostFinder
+    </a>
+    <div class="navbar-icons">
+      <a href="comparison.html" title="Compare kosts">⊞</a>
+      <a href="favorite.html" title="Favorites">♡</a>
+    <div class="menu-container">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- CONTENT -->
+  <div class="page-content">
+
+    <!-- HERO -->
+    <div class="home-hero animate-in">
+      <h2>Explore Kost</h2>
+      <p>Find the best place that suits you</p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-bar animate-in">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search" id="searchInput" />
+      <span class="mic-icon" id="micBtn">🎤</span>
+    </div>
+
+    <!-- FILTER CHIPS -->
+    <div class="filter-row animate-in">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="wifi">WiFi</button>
+      <button class="chip" data-filter="ac">AC</button>
+      <button class="chip" data-filter="laundry">Laundry</button>
+      <button class="chip" data-filter="parking">Parking</button>
+      <button class="chip" data-filter="kitchen">Kitchen</button>
+    </div>
+
+    <!-- KOST LIST -->
+    <div class="kost-list" id="kostList">
+
+      <a class="kost-card animate-in" href="detail.html?id=1">
+        <div class="kost-card-img">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Kost Melati Residence" />
+          <span class="badge-room">Single Room</span>
+          <button class="fav-btn" data-id="1" onclick="event.preventDefault(); toggleFav(this, 1)">♡</button>
+        </div>
+        <div class="kost-card-body">
+          <div class="kost-card-top">
+            <span class="kost-card-name">Kost Melati Residence</span>
+            <span class="kost-card-price">Rp. 1700K</span>
+          </div>
+          <div class="kost-card-loc">📍 Kemanggisan · Near Binus Kemanggisan Campus</div>
+          <div class="kost-tags">
+            <span class="tag">WiFi</span>
+            <span class="tag">AC</span>
+            <span class="tag">Laundry</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="kost-card animate-in" href="detail.html?id=2">
+        <div class="kost-card-img">
+          <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80" alt="The Urban Suite" />
+          <span class="badge-room">Suite Room</span>
+          <button class="fav-btn" data-id="2" onclick="event.preventDefault(); toggleFav(this, 2)">♡</button>
+        </div>
+        <div class="kost-card-body">
+          <div class="kost-card-top">
+            <span class="kost-card-name">The Urban Suite</span>
+            <span class="kost-card-price">Rp. 3600K</span>
+          </div>
+          <div class="kost-card-loc">📍 Jakarta Selatan · Kuningan</div>
+          <div class="kost-tags">
+            <span class="tag">WiFi</span>
+            <span class="tag">AC</span>
+            <span class="tag">Laundry</span>
+            <span class="tag">More</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="kost-card animate-in" href="detail.html?id=3">
+        <div class="kost-card-img">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="Kost Harmoni" />
+          <span class="badge-room">Double Room</span>
+          <button class="fav-btn" data-id="3" onclick="event.preventDefault(); toggleFav(this, 3)">♡</button>
+        </div>
+        <div class="kost-card-body">
+          <div class="kost-card-top">
+            <span class="kost-card-name">Kost Harmoni</span>
+            <span class="kost-card-price">Rp. 2350K</span>
+          </div>
+          <div class="kost-card-loc">📍 West Jakarta · Near Central Park</div>
+          <div class="kost-tags">
+            <span class="tag">WiFi</span>
+            <span class="tag">AC</span>
+            <span class="tag">Laundry</span>
+            <span class="tag">Kitchen</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="kost-card animate-in" href="detail.html?id=4">
+        <div class="kost-card-img">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Kost Mayrooms" />
+          <span class="badge-room">Single Room</span>
+          <button class="fav-btn" data-id="4" onclick="event.preventDefault(); toggleFav(this, 4)">♡</button>
+        </div>
+        <div class="kost-card-body">
+          <div class="kost-card-top">
+            <span class="kost-card-name">Kost Mayrooms</span>
+            <span class="kost-card-price">Rp. 2000K</span>
+          </div>
+          <div class="kost-card-loc">📍 Depok · Near UI Campus</div>
+          <div class="kost-tags">
+            <span class="tag">WiFi</span>
+            <span class="tag">Parking</span>
+          </div>
+        </div>
+      </a>
+
+    </div><!-- end kost-list -->
+
+  </div><!-- end page-content -->
+
+</div><!-- end phone-wrapper -->
+
+<script src="js/shared.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

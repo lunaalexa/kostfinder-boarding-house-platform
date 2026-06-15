@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KostFinder – Compare Kosts</title>
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/comparison.css" />
+</head>
+<body>
+
+<div class="phone-wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🏠</span>KostFinder
+    </a>
+    <div class="navbar-icons">
+      <a href="comparison.html" title="Compare kosts">⊞</a>
+      <a href="favorite.html" title="Favorites">♡</a>
+    <div class="menu-container">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- CONTENT -->
+  <div class="page-content">
+
+    <div class="compare-intro animate-in">
+      <a class="back-link" href="index.html">← Back</a>
+      <h2>Compare Kosts</h2>
+      <p>Select 2-3 kosts to compare side by side</p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="compare-search animate-in">
+      <input type="text" placeholder="Binus Anggrek" id="compareSearch" />
+    </div>
+
+    <!-- KOST OPTIONS -->
+    <div class="kost-options animate-in" id="kostOptions"></div>
+
+    <!-- TABLE / PLACEHOLDER -->
+    <div id="compareResult">
+      <div class="compare-placeholder animate-in">
+        <div class="ph-icon">⊞</div>
+        <p>Select 2 or 3 boarding houses above to compare</p>
+      </div>
+    </div>
+
+  </div><!-- end page-content -->
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/comparison.js"></script>
+</body>
+</html>

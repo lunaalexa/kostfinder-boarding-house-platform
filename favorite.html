@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KostFinder – Favorit</title>
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/favorite.css" />
+</head>
+<body>
+
+<div class="phone-wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🏠</span>KostFinder
+    </a>
+    <div class="navbar-icons">
+      <a href="comparison.html" title="Compare kosts">⊞</a>
+      <a href="favorite.html" title="Favorites">♡</a>
+    <div class="menu-container">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- CONTENT -->
+  <div class="page-content">
+
+    <div class="page-header animate-in">
+      <h2>Marked as Favorite</h2>
+      <p>You can edit by clicking the pencil icon</p>
+    </div>
+
+    <!-- EDIT TOGGLE -->
+    <div class="edit-toggle animate-in">
+      <button id="editBtn" title="Edit Favorit">✏️</button>
+    </div>
+
+    <!-- FAV LIST -->
+    <div class="kost-list" id="favList">
+      <!-- Dirender oleh JS -->
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-fav" id="emptyFav" style="display:none;">
+      <div class="empty-icon">🤍</div>
+      <h3>No favorites yet</h3>
+      <p>Add kost to favorites from the main page</p>
+      <a href="index.html">Explore Kosts</a>
+    </div>
+
+  </div><!-- end page-content -->
+
+</div><!-- end phone-wrapper -->
+
+<script src="js/shared.js"></script>
+<script src="js/favorite.js"></script>
+</body>
+</html>
