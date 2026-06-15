@@ -38,6 +38,13 @@ My responsibilities included conducting user research, translating user needs in
 
 ---
 
+## 🎨 Design Prototype
+
+* High Fidelity Prototype : https://lunaalexa.github.io/kostfinder-boarding-house-platform/
+* Figma Prototype : https://www.figma.com/design/RQDIG90dFyzB8pUmjZXFjk/hci-project-lec?node-id=0-1&p=f&t=bhQYclPuBdCNIzRH-0
+
+---
+
 ## 📊 Key Findings
 
 * Several features that initially seemed intuitive to the design team were not immediately understood by users
